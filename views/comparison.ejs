@@ -1,0 +1,70 @@
+<%- include header.ejs %>
+	<script src="/comparison.js"></script>
+	<h1>Comparison</h1>
+
+
+
+	<div class="row">
+
+	<!-- left side -->
+	  <div class="col s12 m6">
+		<h3 id="left_title"><%= left_plan.name %></h3>
+	    <div class="card">
+	      <div class="card-image">
+	        <img id="left_image" src="images/sample-1.jpg">
+	        <span id="left_job" class="card-title teal lighten-2"><%= left_plan.job %></span>
+	      </div>
+	      <!-- plan information -->
+	      <div class="card-content row">
+	        <p class="col s6">Overall: <span id="left_overall"></span></p>
+	        <p class="col s6">Rating Description: <span id="left_rating"></span></p>
+	        <p class="col s6">Work-Life Balance: <span id="left_wlb"></span></p>
+	        <p class="col s6">Compensation and Benefits: <span id="left_comp"></span></p>
+	        <p class="col s6">Culture and Values: <span id="left_culture"></span></p>
+	        <p class="col s6">Senior Leadership: <span id="left_senior"></span></p>
+	        <p class="col s12 italics">Pay: $<%= left_plan.pay %></p>
+	        <div class="row">
+	        	<p class="col s9" id="heading">Featured Review</p>
+	        	<p class="col s12">Pros: <span id="left_pros"></span></p>
+	        	<p class="col s12"><br></p>
+	        	<p class="col s12">Cons: <span id="left_cons"></span></p>
+	        </div>
+	      </div>
+	      <div class="card-action">
+	        <a id="left_link" href="#">Website</a>
+	      </div>
+	    </div>
+	  </div>
+
+
+	<!-- right side side -->
+	  <div class="col s12 m6">
+		<h3 id="right_title"><%= right_plan.name %></h3>
+	    <div class="card">
+	      <div class="card-image">
+	        <img id="right_image" src="images/sample-1.jpg">
+	        <span id="right_job" class="card-title red darken-4"><%= right_plan.job %></span>
+	      </div>
+	      <!-- plan information -->
+	      <div class="card-content row">
+	        <p class="col s6">Overall: <span id="right_overall"></span></p>
+	        <p class="col s6">Rating Description: <span id="right_rating"></span></p>
+	        <p class="col s6">Work-Life Balance: <span id="right_wlb"></span></p>
+	        <p class="col s6">Compensation and Benefits: <span id="right_comp"></span></p>
+	        <p class="col s6">Culture and Values: <span id="right_culture"></span></p>
+	        <p class="col s6">Senior Leadership: <span id="right_senior"></span></p>
+	        <p class="col s12 italics">Pay: $<%= right_plan.pay %></p>
+	        <div class="row">
+	        	<p class="col s9" id="heading">Featured Review</p>
+	        	<p class="col s12">Pros: <span id="right_pros"></span></p>
+	        	<p class="col s12"><br></p>
+	        	<p class="col s12">Cons: <span id="right_cons"></span></p>
+	        </div>
+	      </div>
+	      <div class="card-action">
+	        <a id="right_link" href="#">Website</a>
+	      </div>
+	    </div>
+	  </div>
+
+	</div>

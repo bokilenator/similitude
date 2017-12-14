@@ -1,0 +1,31 @@
+#heading {
+	margin-top: 1em;
+	font-weight: bold;
+}
+
+/*give my logo some class*/
+
+.brand-logo {
+	font-family: "Palatino";
+}
+
+
+
+/*helps keep footer down*/
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+	margin-top: 10em;
+}
+
+.active a {
+	color: white;
+}

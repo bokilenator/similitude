@@ -1,0 +1,37 @@
+<%- include header.ejs %>
+<h1>Welcome to Similitude</h1>
+<p>Ever been on a job hunt, stressing out what you are going to do for the next few years of your life?  Are you a college student trying to look for cool internships?  This web application will help you compare and contrast competing offers you may have based on factors you may normally not dig up yourself.  Hopefully, this site will begin to help you make a well-informed decision about choosing a job.  Enjoy!</p>
+
+<!-- brief description of the app -->
+<div class="row">
+	<div class="card col s6">
+	  <div class="card-image waves-effect waves-block waves-light">
+	    <img class="activator" src="https://cdn.pixabay.com/photo/2017/10/12/21/26/bulb-2846032_1280.jpg">
+	  </div>
+	  <div class="card-content">
+	    <span class="card-title activator grey-text text-darken-4">Build a Plan<i class="material-icons right">more_vert</i></span>
+	    <p><a href="/plan/new">Look for companies</a></p>
+	  </div>
+	  <div class="card-reveal">
+	    <span class="card-title grey-text text-darken-4">Build a Plan<i class="material-icons right">close</i></span>
+	    <p>We use the Glassdoor API to find the latest and greatest statistics about the job, outside of just pay.</p>
+	  </div>
+	</div>
+
+	<div class="card col s6">
+	  <div class="card-image waves-effect waves-block waves-light">
+	    <img class="activator" src="https://cdn.pixabay.com/photo/2017/11/11/15/07/balancing-2939271_1280.png">
+	  </div>
+	  <div class="card-content">
+	    <span class="card-title activator grey-text text-darken-4">Compare Plans<i class="material-icons right">more_vert</i></span>
+	    <p><a href="/choose">Choose your two favorite!</a></p>
+	  </div>
+	  <div class="card-reveal">
+	    <span class="card-title grey-text text-darken-4">Compare Plans<i class="material-icons right">close</i></span>
+	    <p>Comparing plans side by side is immensely valuable in making sure you see the full picture of both jobs before deciding on the
+	    right one to pick.</p>
+	  </div>
+	</div>
+</div>
+
+<%- include footer.ejs %>
